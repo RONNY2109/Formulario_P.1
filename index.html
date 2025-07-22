@@ -8,16 +8,16 @@
   </head>
   <body>
 
-    <h1>formmulario de Validacion</h1>
-    <form action="">
-      <div class="input-form">
+    <h1 id="form-tittle">formmulario de Validacion</h1>
+    <form action="" id="form">
+      <div class="input-div">
         <label for="">Nombre de Usuario</label>
-        <input type="text" id="n-Usuario" placeholder="Ej: Ronny2112" />
+        <input type="text" id="username" placeholder="Ej: Ronny2112" />
       </div>
-      <p class="informacion">
+      <p class="information">
      debe ser el siguiente formato: 8 caracteres, al menos una mayuscula, un numero y un caracter especial
     </p>
-      <div class="input-form">
+      <div class="input-div">
         <label for="">Email</label>
         <input
           type="email"
@@ -25,14 +25,13 @@
           placeholder="Ej: angelleal@gmail.com"
         />
       </div>
-      <p class="informacion">
+      <p class="information">
        debe ser el siguiente formato: 8 caracteres, al menos una mayuscula, un numero y un caracter especial
       </p>
-      <div class="input-form">
+      <div class="input-div">
         <label for="">Country</label>
-        <select id="">
+        <select id="countries">
           <option value="" disabled selected>Seleccione un Pais</option>
-
           <option data-countryCode="GB" value="44">UK (+44)</option>
           <option data-countryCode="US" value="1">USA (+1)</option>
           <option data-countryCode="DZ" value="213">Algeria (+213)</option>
@@ -314,7 +313,7 @@
       
       <div>
         <label for="">Countries</label>
-        <select id="Country">s
+        <select id="Countries">s
           <option value="" disabled selected>Seleccione un Pais</option>
            <option data-countryCode="GB" value="44">UK (+44)</option>
           <option data-countryCode="US" value="1">USA (+1)</option>
@@ -595,32 +594,32 @@
         
         </select>
       </div>
-      <div class="input-form">
+      <div class="input-div">
         <label for="">numero telefonico</label>
       </div>
-      <div>
+      <div id="phone-container">
         <span id="phone-code">+##</span>
         <input type="tel" id="phone" placeholder="Ej: 424-191-3898" />
-        <p class="informacion">
+        <p class="information">
          debe ser el siguiente formato: 424-191-3898
         </p>
       </div>
-      <div class="input-form">
+      <div class="input-div">
         <label for="">contraseña</label>
         <input type="password" id="password" placeholder="Ej: Ronny2112" />
       </div>
-      <p class="informacion">
+      <p class="information">
         debe ser el siguiente formato: 8 caracteres, al menos una mayuscula, un numero y un caracter especial
      </p>
 
+      <div class="input-div">
+        <label for="">contraseña</label>
+        <input type="password" id="confirm-password" placeholder="Ej: Ronny2112" />
+      </div>
    
-    <p class="informacion">
+    <p class="information">
      confirmar contraseña
-     <input
-          type="password"
-          id="confirm password"
-          placeholder="Ej: Ronny2112"
-        />
+    
     </p>
 
     <button id="form-btn" disabled>registrar</button>
